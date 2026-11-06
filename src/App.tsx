@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { METRICS_DATA, INITIAL_ALERTS } from "./data/mockSecurityData";
-import { ThreatAlert, IncidentStatus } from "./types/dashboard";
+import type { ThreatAlert, IncidentStatus } from "./types/dashboard";
 import SocHeader from "./components/SocHeader";
 import MetricCards from "./components/MetricCards";
 import ThreatFeed from "./components/ThreatFeed";

@@ -1,5 +1,5 @@
 import React from "react";
-import { ThreatAlert } from "../types/dashboard";
+import type { ThreatAlert } from "../types/dashboard";
 import {
   X,
   ShieldAlert,

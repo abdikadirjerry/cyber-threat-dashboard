@@ -1,5 +1,9 @@
 import React, { useState } from "react";
-import { ThreatAlert, SeverityLevel, IncidentStatus } from "../types/dashboard";
+import type {
+  ThreatAlert,
+  SeverityLevel,
+  IncidentStatus,
+} from "../types/dashboard";
 import {
   ShieldAlert,
   Search,
