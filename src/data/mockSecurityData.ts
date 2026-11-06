@@ -1,8 +1,13 @@
-import {
-  ThreatAlert,
-  SecurityMetric,
-  IpIntelligence,
-} from "../types/dashboard";
+import { ThreatAlert, SecurityMetric } from "../types/dashboard";
+
+export interface IpIntelligence {
+  ip: string;
+  reputationScore: number; // 0-100 (100 = malicious)
+  isp: string;
+  country: string;
+  associatedAlertsCount: number;
+  status: "Flagged" | "Clean" | "Investigating";
+}
 
 export const METRICS_DATA: SecurityMetric[] = [
   {

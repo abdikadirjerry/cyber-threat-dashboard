@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import { IpIntelligence } from "../types/dashboard";
-import { MOCK_IP_INTEL } from "../data/mockSecurityData";
+import { IpIntelligence, MOCK_IP_INTEL } from '../data/mockSecurityData';
 import {
   Terminal,
   ShieldAlert,
