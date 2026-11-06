@@ -24,7 +24,7 @@ export interface SecurityMetric {
 
 export interface IpIntelligence {
   ip: string;
-  reputationScore: number; // 0-100 (100 = malicious)
+  reputationScore: number;
   isp: string;
   country: string;
   associatedAlertsCount: number;
