@@ -1,7 +1,7 @@
 export type SeverityLevel = "Critical" | "High" | "Medium" | "Low";
 export type IncidentStatus = "Active" | "Acknowledged" | "Resolved";
 
-export interface ThreatAlert {
+export type ThreatAlert = {
   id: string;
   timestamp: string;
   sourceIp: string;
@@ -12,24 +12,24 @@ export interface ThreatAlert {
   location: string;
   description: string;
   signature: string;
-}
+};
 
-export interface SecurityMetric {
+export type SecurityMetric = {
   title: string;
   value: string | number;
   change: string;
   trend: "up" | "down" | "neutral";
   color: string;
-}
+};
 
-export interface IpIntelligence {
+export type IpIntelligence = {
   ip: string;
   reputationScore: number;
   isp: string;
   country: string;
   associatedAlertsCount: number;
   status: "Flagged" | "Clean" | "Investigating";
-}
+};
 
 export const METRICS_DATA: SecurityMetric[] = [
   {
