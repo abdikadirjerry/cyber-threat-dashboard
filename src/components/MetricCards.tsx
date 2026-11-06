@@ -1,5 +1,5 @@
 import React from "react";
-import { SecurityMetric } from "../types/dashboard";
+import { SecurityMetric } from "../data/mockSecurityData";
 import { Shield, Clock, Activity, Lock } from "lucide-react";
 
 interface MetricCardsProps {
